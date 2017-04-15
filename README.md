@@ -38,6 +38,36 @@ $log->addWarning('Foo');
 $log->addError('Bar');
 ```
 
+### SeasLog
+
+一个高效、快速、稳定的日志扩展。
+
+- https://github.com/Neeke/SeasLog
+- http://neeke.github.io/SeasLog/
+
+特点：
+
+- 分模块、分级别
+- 配置简单(最好是勿须配置)
+- 日志格式清晰易读
+- 应用简单、性能很棒
+
+安装 SeasLog
+``` shell
+$ /path/to/phpize
+$ ./configure --with-php-config=/path/to/php-config
+$ make && make install
+```
+
+使用：
+``` php
+SeasLog::setBasePath('/log/base_test');
+SeasLog::setLogger('testModule/app1');
+
+SeasLog::log(SEASLOG_ERROR,'this is a error test by ::log');
+SeasLog::debug('this is a {userName} debug',array('{userName}' => 'neeke'));
+```
+
 ## 请求( Request )
 
 ### Guzzle
