@@ -74,7 +74,9 @@ https://segmentfault.com/a/1190000002867007
 
 一个OAuth2服务器实现。
 
-http://bshaffer.github.io/oauth2-server-php-docs/
+- http://bshaffer.github.io/oauth2-server-php-docs/
+- 理解OAuth 2.0 - 阮一峰的网络日志
+http://www.ruanyifeng.com/blog/2014/05/oauth_2_0.html
 
 ### jwt
 
